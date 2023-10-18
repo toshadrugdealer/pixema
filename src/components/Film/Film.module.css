@@ -1,0 +1,138 @@
+.boxFilm {
+  width: 69%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.boxFilmPage {
+  color: var(--color);
+  transition: color 200ms linear;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+h1 {
+  color: var(--color);
+  transition: color 200ms linear;
+}
+p {
+  margin: 15px;
+  font-size: 16px;
+  color: var(--color);
+  transition: color 200ms linear;
+  line-height: 24px;
+}
+h6 {
+  font-size: 16px;
+}
+.boxFilmPage h1 {
+  font-size: 40px;
+}
+.genre {
+  font-size: 16px;
+  color: var(--color);
+  transition: color 200ms linear;
+}
+.timeRating {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  justify-content: space-around;
+}
+.filmInfoText {
+  margin-left: 30px;
+  width: 100%;
+}
+img {
+  width: 266px;
+  height: 356px;
+  border-radius: 10px;
+}
+.imdbRating {
+  background-color: var(--imb-raiting-bg);
+
+  width: 37px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.runtime {
+  background-color: var(--background-color);
+  transition: background-color 200ms linear;
+  width: 73px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.posterBtn {
+  width: 266px;
+}
+
+.btnAddRemove {
+  cursor: pointer;
+  width: 266px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background-color: rgba(50, 53, 55, 1);
+}
+.sliderRecomendation {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+.btnRec {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btnRec button {
+  font-size: 30px;
+  color: var(--color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.sliderRecomendation p {
+  color: var(--color);
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.listContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.favoriteFilms {
+  text-decoration: none;
+}
+.listItem {
+  width: 266px;
+  height: 380px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+.listItem p {
+  font-size: 16px;
+}
+.poster {
+  width: 266px;
+  height: 357px;
+  border-radius: 20px;
+}
+.boxTrends {
+  margin-top: 20px;
+}

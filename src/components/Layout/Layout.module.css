@@ -1,0 +1,65 @@
+.containerBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.boxBar {
+  width: 15.5%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navBar {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.home {
+  color: rgba(128, 133, 139, 1);
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.home:active {
+  color: rgba(123, 97, 255, 1);
+}
+
+.trends {
+  color: rgba(128, 133, 139, 1);
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.trends:active {
+  color: rgba(123, 97, 255, 1);
+}
+.favorites {
+  color: rgba(128, 133, 139, 1);
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.favorites:active {
+  color: rgba(123, 97, 255, 1);
+}
+.settings {
+  color: rgba(128, 133, 139, 1);
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.settings:active {
+  color: rgba(123, 97, 255, 1);
+}
+.p {
+  color: rgba(175, 178, 182, 1);
+  position: fixed;
+  top: 92vh;
+  text-align: center;
+}
+.boxQwer {
+  width: 15.5%;
+}

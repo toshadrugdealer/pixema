@@ -1,0 +1,51 @@
+.h1 {
+  color: var(--color);
+  transition: color 200ms linear;
+}
+.favorites {
+  display: flex;
+  justify-content: center;
+  width: 69%;
+}
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.pXz {
+  margin: 5px;
+  font-weight: 500;
+  color: rgba(175, 178, 182, 1);
+}
+.pTitle {
+  margin: 5px;
+  font-weight: 700;
+}
+.listItem {
+  width: 266px;
+  height: 433px;
+  margin: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+.listItem a {
+  text-decoration: none;
+  margin: 5px;
+  color: var(--color);
+  transition: color 200ms linear;
+  text-align: center;
+}
+.poster {
+  width: 266px;
+  height: 357px;
+  border-radius: 20px;
+}

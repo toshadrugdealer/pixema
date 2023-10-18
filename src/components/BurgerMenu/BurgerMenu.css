@@ -1,0 +1,80 @@
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 20%;
+}
+.burger-icon {
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--color);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: transform 0.2s ease;
+}
+.open .bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+.open .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  background-color: rgba(175, 178, 182, 1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+}
+
+.open .menu-items {
+  display: block;
+}
+
+.menu-items li {
+  padding: 10px 20px;
+  text-align: right;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.menu-items li:last-child {
+  border-bottom: none;
+}
+.btnNameLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.btnLogo {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(123, 97, 255, 1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
