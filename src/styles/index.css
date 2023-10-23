@@ -36,12 +36,14 @@ html[data-theme="dark"] {
   --input-bg: #323537;
   --input-border: #323537;
   --imb-raiting-bg: #00a340;
+  --bg-settings: #323537;
 }
 html[data-theme="light"] {
-  --background-color: rgba(233, 233, 233, 0.633);
+  --background-color: rgba(233, 233, 233, 1);
   --bg-color: #ffffff;
   --color: rgba(36, 36, 38, 1);
   --input-bg: #ffffff;
   --input-border: #afb2b6;
   --imb-raiting-bg: #a9f0c5;
+  --bg-settings: #e4e4e4;
 }

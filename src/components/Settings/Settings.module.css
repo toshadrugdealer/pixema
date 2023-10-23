@@ -14,10 +14,11 @@
   border-radius: 10px;
   background-color: var(--background-color);
   transition: background-color 200ms linear;
+  display: flex;
+  flex-direction: row;
 }
 .passwordSettings {
   width: 100%;
-  height: 280px;
   border-radius: 10px;
   background-color: var(--background-color);
   transition: background-color 200ms linear;
@@ -79,4 +80,45 @@
   transform: translatex(40px);
   -webkit-transform: translatex(40px);
   -ms-transform: translatex(40px);
+}
+.profileName {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+.profileName p {
+  margin: 0 0 5px 0;
+  color: var(--color);
+}
+.profileNameBox {
+  width: 90%;
+  height: 50px;
+  background-color: var(--input-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: var(--color);
+}
+.profileEmail {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profileEmail p {
+  margin: 0 0 5px 0;
+  color: var(--color);
+}
+.profileEmailBox {
+  width: 90%;
+  height: 50px;
+  background-color: var(--input-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: var(--color);
 }

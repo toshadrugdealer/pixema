@@ -185,8 +185,8 @@ function Film() {
         <div className={styles.btnRec}>
           <p className={styles.pRec}>Recommendations</p>
           <div>
-            <button onClick={moveLeft}>&lt;</button>
-            <button onClick={moveRight}>&gt;</button>
+            <button onClick={moveLeft}>←</button>
+            <button onClick={moveRight}>→</button>
           </div>
         </div>
         <div>

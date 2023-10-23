@@ -60,3 +60,11 @@
   align-items: center;
   cursor: pointer;
 }
+.filterTextBox {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.filterText {
+  margin: 0 10px 0 0;
+}

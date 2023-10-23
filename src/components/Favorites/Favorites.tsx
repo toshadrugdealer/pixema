@@ -1,29 +1,30 @@
 import { useAppSelector } from "../../hooks/redux-hooks";
 import { Link } from "react-router-dom";
 import styles from "./Favorites.module.css";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-// import { getAuth, onAuthStateChanged } from "firebase/auth";
-// import { get, ref } from "firebase/database";
-// import { db } from "../../firebase";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { get, ref } from "firebase/database";
+import { db } from "../../firebase";
 
 function Favorites() {
   const favoriteFilms = useAppSelector((state) => state.favorites);
-  // const [userData, setUserData] = useState();
-  // useEffect(() => {
-  //   onAuthStateChanged(getAuth(), (user) => {
-  //     if (user) {
-  //       const userId = user.uid;
-  //       const userRef = ref(db, "users/" + userId);
-  //       get(userRef).then((snapshot) => {
-  //         if (snapshot.exists()) {
-  //           const userData = snapshot.val();
-  //           setUserData(userData);
-  //         }
-  //       });
-  //     }
-  //   });
-  // }, []);
+  const [userData, setUserData] = useState();
+  useEffect(() => {
+    onAuthStateChanged(getAuth(), (user) => {
+      if (user) {
+        const userId = user.uid;
+        const userRef = ref(db, "users/" + userId);
+        get(userRef).then((snapshot) => {
+          if (snapshot.exists()) {
+            const userData = snapshot.val();
+            setUserData(userData);
+          }
+        });
+      }
+    });
+  }, []);
+
   return (
     <div className={styles.favoritesBox}>
       <h2>

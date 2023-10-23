@@ -15,14 +15,18 @@
   width: 20%;
   text-align: center;
 }
-.input {
-  margin-left: 10px;
+.searchInputAndBtn {
   width: 60%;
   display: flex;
   background-color: var(--input-bg);
   transition: background-color 200ms linear;
   border: 2px solid var(--input-border);
   transition: border 200ms linear;
+  border-radius: 10px;
+}
+.input {
+  border: none;
+  width: 90%;
 }
 .user {
   text-align: center;

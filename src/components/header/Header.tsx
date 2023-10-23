@@ -4,6 +4,7 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { useState, ChangeEvent } from "react";
 import { setInputValue } from "../../store/slices/inputSlice";
 import { useAppDispatch } from "../../hooks/redux-hooks";
+import BtnBurger from "../BtnButger/BtnBurger";
 
 function Header() {
   const [InputValueLocal, setInputValueLocal] = useState<string>("");
@@ -19,13 +20,17 @@ function Header() {
         <div className={styles.logo}>
           <span>pix</span>ema
         </div>
-        <input
-          className={styles.input}
-          type="text"
-          value={InputValueLocal}
-          onChange={handleSearchInputChange}
-          placeholder="Search"
-        />
+        <div className={styles.searchInputAndBtn}>
+          <input
+            className={styles.input}
+            type="text"
+            value={InputValueLocal}
+            onChange={handleSearchInputChange}
+            placeholder="Search"
+          />
+          <BtnBurger />
+        </div>
+
         <BurgerMenu />
       </div>
       <Outlet />
